@@ -4,8 +4,8 @@ The app to decrypt zhihu's encrypted (probably not) passages.
 import logging
 
 import toga
-import zhihuDecrypt
-from zhihuDecrypt import consts
+import zhihudecrypt
+from zhihudecrypt import consts
 from toga.style import Pack
 from toga.style.pack import COLUMN, ROW
 
@@ -86,13 +86,13 @@ class ZhihuDecrypt(toga.App):
         logging.info("解密中")
         if method == "auto":
             logging.info("加密情况设为auto, 正在自动检测")
-            probability = zhihuDecrypt.detect_encrypt_method_probability(passage)
+            probability = zhihudecrypt.detect_encrypt_method_probability(passage)
             logging.info("各情况概率: ")
             for k, v in probability.items():
                 logging.info(f"{k}: {round(v * 10000) / 100}%")
             method = max(probability, key=lambda x: probability[x])
             logging.info(f"检测结果为: {method}")
-        self.passage_text.value = zhihuDecrypt.decrypt(passage, method)
+        self.passage_text.value = zhihudecrypt.decrypt(passage, method)
         logging.info("解密完成")
 
 
