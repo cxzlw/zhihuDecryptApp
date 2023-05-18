@@ -163,7 +163,7 @@ readme = "README.md"
 python = ">=3.11,<3.12"
 toga = "^0.3.1"
 briefcase = "^0.3.14"
-zhihuDecrypt = { path = "src/zhihuDecrypt" }
+zhihudecrypt = {git = "https://github.com/cxzlw/zhihuDecrypt"}
 
 [build-system]
 requires = ["poetry-core"]
