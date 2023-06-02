@@ -12,7 +12,7 @@
 
 ## 欢迎你, 可以给我一颗星星吗?
 
-基于zhihuDecrypt的跨平台乱码文章解密工具
+基于[zhihuDecrypt](https://github.com/cxzlw/zhihuDecrypt)的跨平台乱码文章解密工具
 
 得益于[Python](https://www.python.org/)和[BeeWare](https://beeware.org/)优秀的跨平台能力，本工具可以跑在Windows, Linux, MacOS, Android和iOS上
 
