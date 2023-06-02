@@ -2,7 +2,7 @@
 [tool.briefcase]
 project_name = "Zhihu Decrypt"
 bundle = "com.github.cxzlw"
-version = "0.0.1"
+version = "0.1.1"
 url = "https://github.com/cxzlw/zhihuDecryptApp"
 license = "GNU General Public License v3 (GPLv3)"
 author = "cxzlw"
@@ -155,7 +155,7 @@ style_framework = "Shoelace v2.3"
 
 [tool.poetry]
 name = "zhihudecryptapp"
-version = "0.0.1"
+version = "0.1.1"
 description = "The app to decrypt zhihu's encrypted (probably not) passages."
 authors = ["cxzlw <wsc_zds@qq.com>"]
 readme = "README.md"
